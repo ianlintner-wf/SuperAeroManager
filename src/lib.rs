@@ -2,6 +2,9 @@ use gdnative::*;
 use crate::cube::RustTest;
 extern crate gdnative as godot;
 
+mod cube;
+mod engine;
+
 /// The HelloWorld "class"
 #[derive(NativeClass)]
 #[inherit(Node)]
@@ -29,7 +32,7 @@ impl HelloWorld {
     }
 }
 
-mod cube;
+
 
 
 // Function that registers all exposed classes to Godot
